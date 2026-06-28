@@ -2,14 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ESP32 AI CAM</title>
+<title>ESP32 AI Camera</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>ESP32 AI CAM</h1>
-<img id="cam" src="http://ESP32_IP:81/stream">
-<br>
+<img id="stream" src="http://ESP32_IP:81/stream">
+<div>
 <button onclick="capture()">Capture Photo</button>
+<button onclick="flash()">Flash</button>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
